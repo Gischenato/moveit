@@ -19,7 +19,7 @@ export const CountdownContext = createContext({} as CountdownContextData)
 let countdownTimeout: NodeJS.Timeout
 
 
-export function CountdownProvider({children}) {
+export function CountdownProvider({children}: CountdownProviderProps) {
 
     const { startNewChallenge } = useContext(ChallengesContext)
     
